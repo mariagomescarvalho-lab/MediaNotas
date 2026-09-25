@@ -1,0 +1,37 @@
+    function calcularMedia() {
+        const textoNota1 = document.getElementById("nota1").value;
+        const textoNota2 = document.getElementById ("nota2").value;
+        const textoNota3 = document.getElementById ("nota3").value;
+
+        if (textoNota1 ===""){
+            alert ("Preencha todas as notas!")
+            return;
+        }
+        if (textoNota2 ===""){
+            alert ("Preencha todas as notas!")
+            return;
+        }
+        if (textoNota3 ===""){
+            alert ("Preencha todas as notas!")
+            return;
+        }
+
+        const nota1 = Number(textoNota1);
+        const nota2 = Number(textoNota2);
+        const nota3 = Number(textoNota3);
+
+        const media = (nota1 + nota2 + nota3) / 3;
+
+        let simulação;
+
+        if (media >= 7) {
+            situação = "APROVADO";
+        }
+               else if (media >= 5) {
+                    situação = "RECUPERAÇÃO";
+                } else {
+                    situação = "REPROVADO"
+                }
+                const mediaFormada = media.toFixed(1);
+                document.getElementById("resultado").textContent = "media: "+ mediaFormada +" -Situação: " + situação; 
+    }
