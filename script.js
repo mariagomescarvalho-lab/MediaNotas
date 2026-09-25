@@ -33,5 +33,5 @@
                     situação = "REPROVADO"
                 }
                 const mediaFormada = media.toFixed(1);
-                document.getElementById("resultado").textContent = "media: "+ mediaFormada +" -Situação: " + situação; 
+                document.getElementById("resultado").textContent = "media: "+ mediaFormada +" -Situação: " + situação;  
     }
